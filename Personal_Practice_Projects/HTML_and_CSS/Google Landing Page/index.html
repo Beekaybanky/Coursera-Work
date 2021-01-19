@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <style type="text/css">
+    	*{
+    		box-sizing: content-box;
+    		font-family: arial, sans-serif;
+    		font-size: 0.98em;
+    	}
+    	#header {
+    		margin: 10px 15px;
+    	}
+    	#Gmail,#Images,#Box-top,#Account {
+    		float: right;
+    		margin: 10px;
+    	}
+    	#header a {
+    		text-decoration: none; 
+    		color: black;
+    		font-size: 1em;
+    	}
+    	#header a:hover {
+    		text-decoration: underline;
+    	}
+    	#Account {
+    		top: -7px;
+    		position:relative;
+    	}
+    	#Box-top {
+    		top:-3px;
+    		position: relative;
+    	}
+    	header img {
+    		border-radius: 50%;
+    	}
+    	#Content {
+    		width: 90%;
+    		margin: auto;
+    	}
+    	#Logo {
+    		margin: auto;
+    		width: 272px;
+    		padding-top: 150px;
+    	}
+    	#Textbox {
+    		margin: auto;
+    		margin-top: 30px;
+    		border: 0px solid #9aa0a6;
+    		width: 90%;
+    		border-top-left-radius: 50px;
+    		border-bottom-left-radius: 50px;
+    		border-top-right-radius: 50px;
+    		border-bottom-right-radius: 50px;
+    		height: 40px;
+    		color: #9aa0a6;
+    		box-shadow: 0px 0px 5px #8aa0a7;
+    	}
+    	#Textbox:hover {
+    		box-shadow: 0px 0px 10px #8aa0a7;
+    	}
+    	#Input{
+    		width: 80%;
+    		margin: auto;
+    		float: left;
+    		margin-top: 0px;
+    		margin-bottom: -1px;
+    		margin-left: 10px;
+    	}
+    	input {
+    		width: 100%;
+    		height: 36px;
+	   		border: none;
+	   		font-size: 1.3em;
+    	}
+    	input:focus {
+    		outline: none;
+    	}
+    	#mic {
+    		float: right;
+    		margin-right: 5px;
+    		position: relative;
+    		bottom: -7px;
+    	}
+    	#search {
+    		float: left;
+    		margin-right: 3px;
+    		bottom: -7px;
+    		position: relative;
+    		margin-left: 5px;
+    	}
+    	a {
+    		text-decoration: none;
+    	}
+    	#Container-fluid {
+    		margin: auto;
+    		width: 89%;
+    		margin-top: 30px;
+    	}
+    	#First, #Second, #Third {
+    		/*width: 90%;*/
+    		margin: auto;
+    		margin-top: 40px;
+    		text-align: center;
+    	} 
+    	#GS, #IFL{
+    		background-color: #F5F5F5;
+    		margin: 10px;
+    		padding: 10px;
+    		color: #444444;
+    		text-align: center;
+    		padding-right: 10px;
+    		padding-left: 10px;
+    		border: 0px solid #ABABAB;
+    		border-radius: 7px;
+    	}
+    	#GS:hover, #IFL:hover{
+    		box-shadow: 0 0 3px #ABABAB;
+    	}
+    	#Third a {
+    		font-size: 1em;
+    		margin-right: 10px;
+    	}
+
+    	footer {
+    		background-color: #E6E7EB; 
+    		margin-right: -8px;
+    		margin-left: -5px;
+    		margin-top: 100px;
+    		margin-bottom: -5px;
+    		padding-top: 15px;
+    		padding-bottom: 5px;
+    	}
+    	footer div>div {
+    		margin-left: 15px;
+   			color: #5D5C5C;
+    	}
+    	#Footer2 {
+    		text-align: center;
+    		margin-bottom: -10px;
+    	}
+    	#Footer2 a {
+    		color: #5D5C5C;
+    		margin-left: 15px;
+    	}
+    	#Footer2 a:hover {
+    		text-decoration: underline;
+    	}
+    </style>
+</head>
+<body>
+	<header>
+		<div id="header">
+			<div id="Account">
+				<a href="#" >
+					<img src="./unnamed.png" height="32px" width="32px">
+				</a>
+			</div>
+			<div id="Box-top">
+				<a href="#" >
+					<img src="./googleicon.png" height="25px" width="25px">
+				</a>
+			</div>
+			<div id="Images">
+				<a href="#" >
+					Images
+				</a>
+			</div>
+			<div id="Gmail">
+				<a href="#" >
+					Gmail
+				</a>
+			</div>
+			
+		</div>
+	</header> <!--Header -->
+	
+	<div id="Content">
+		<div id="Logo">
+			<img src="./googlelogo_color_272x92dp.png" alt="logo" height="92" width="272">
+		</div>
+		<div id="Textbox">
+			<span id="search"class="material-icons">
+				search
+			</span>
+			<span id="mic"class="material-icons">
+				mic
+			</span>
+			<div id="Input"><input type="text" name="Search-Query" alt="Search-Query">
+			</div>	
+		</div>
+		
+		<div>
+			<div id="Container-fluid">
+				<div id="First">
+					<center>
+					<a href="#" id="GS">Google Search</a>
+					<a href="#" id="IFL">I'm Feeling Lucky</a>
+				</div>
+					</center>
+				<div id="Second" style="clear: both;">
+					Start 2021 with 
+					<a href="#">free courses from Google.</a>
+				</div>
+				<div id="Third">
+					Google offered in:    &nbsp&nbsp<a href="#"> 	Hausa</a>
+						<a href="#">	Igbo</a> 
+						<a href="#">	Ede Yoruba</a>
+						<a href="#"> 	Nigerian Pidgin</a>	
+				</div>
+			</div>
+		</div>		
+	</div><!--End of Main Content -->
+	
+	<footer>
+		<div>
+			<div>Nigeria</div>
+			<hr>
+			<div id="Footer2">
+				<p>
+					<a href="#">Privacy</a>
+					<a href="#">Terms</a>
+					<a href="#">Settings</a>
+				</p>
+				<p>
+					<a href="#">Advertising</a>
+					<a href="#">Business</a>
+					<a href="#">About</a>
+					<a href="#">How Search works</a>
+				</p>
+			</div>
+		</div>
+	</footer> <!--Footer -->
+</body>
+</html>
