@@ -30,13 +30,16 @@
     	}
     	#Account {
     		top: -7px;
-    		position:relative;
+    		position: relative;
     	}
     	#Box-top {
     		top:-3px;
     		position: relative;
     	}
-    	header img {
+    	#Img {
+    		background: url('./unnamed.png') no-repeat;
+    		height: 32px;
+    		width: 32px;
     		border-radius: 50%;
     	}
     	#Content {
@@ -62,13 +65,13 @@
     		border-bottom-right-radius: 50px;
     		height: 40px;
     		color: #9aa0a6;
-    		box-shadow: 0px 0px 5px #8aa0a7;
+    		box-shadow: 0px 0px 1px #8aa0a7;
     		position: relative;
     		top: 50%;
     		left: 10px;
     	}
     	#Textbox:hover {
-    		box-shadow: 0px 0px 10px #8aa0a7;
+    		box-shadow: 0px 0px 5px #8aa0a7;
     	}
     	input {
     		width: 70%;
@@ -135,14 +138,11 @@
     	footer {
     		background-color: #E6E7EB; 
     		margin-right: -8px;
-    		margin-left: -5px;
+    		margin-left: -8px;
     		margin-top: 100px;
     		margin-bottom: -5px;
     		padding-top: 15px;
     		padding-bottom: 5px;
-    		/*position: relative;
-    		bottom: -10px;
-    		width: 102%;*/
     	}
     	footer div>div {
     		margin-left: 15px;
@@ -151,35 +151,123 @@
     	#Footer2 {
     		text-align: center;
     		margin-bottom: -10px;
+    		line-height: 2em;
     	}
     	#Footer2 a {
     		color: #5D5C5C;
-    		margin-left: 15px;
+    		margin-left: 5px;
     	}
     	#Footer2 a:hover {
     		text-decoration: underline;
     	}
+
+    		/*******DROPDOWN LIST*/
+		.dropbtn {
+		  background-color: #4CAF50;
+		  color: white;
+		  /*padding: 16px;*/
+		  font-size: 16px;
+		  border: none;
+		}
+
+		.dropdown {
+		  position: relative;
+		  display: inline-block;
+		  right: 0px;
+		}
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  right: 10px;
+		  background-color: #f1f1f1;
+		  min-width: 300px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		  border-radius: 5px;
+		  border: 1px solid rgba(0,0,0,0.2);
+		  margin-top: 5px;
+		  text-align: center;
+		  overflow: auto;
+		}
+		.dropdown-content a {
+		  color: black;
+		  padding: 0;
+		  text-decoration: none;
+		  display: block;
+		}
+		/*.dropdown-content a:hover {background-color: #ddd;}*/
+		.dropdown:hover .dropdown-content {display: block;}
+		.dropdown:hover .dropbtn {background-color: #3e8e41;}
+			
+
+		#img-big img {
+			margin: auto;
+			width: 83px;
+			border-radius: 50%;
+			margin-bottom: 0px;
+			padding: 20px; 
+		}
+
+		#Myname {
+			font-size: 1.3em;
+			font-weight: bold;
+			margin-top: 0px; 
+		}
+		a#Email {
+			font-size: 0.85em; 
+			font-weight: lighter; 
+			font-style: italic;
+			margin-bottom: 15px;
+			margin-top: 5px;
+		}
+			
+			/*******END OF DROP DOWN********/
+
     </style>
 </head>
 <body>
 	<header>
 		<div id="header">
-			<div id="Account">
-				<a href="#" >
-					<img src="./unnamed.png" height="32px" width="32px">
-				</a>
-			</div>
-			<div id="Box-top">
-				<a href="#" >
+			<a href="#"><div id="Account" alt="Account">
+							
+				<div class="dropdown" >
+				  <div class="dropbtn" id="Img"></div>
+				  <div class="dropdown-content">
+				  	<div id="img-big">
+				  		<img src="./unnamed-big.png"  width="83" height="83">
+				  	</div>
+				  	<div id="Myname">
+				  		Adebola Israel Bankole
+				  		<a href="beekaybanky@gmail.com" id="Email">
+				  			beekaybanky@gmail.com
+				  		</a>
+				  	</div>
+				  	<div><a href="#">Manage your Google Account</a></div>
+				  	<hr>
+				  	<div><a href="#"><span></span> Add another account</a></div>
+				  	<hr>
+				  	<button>Sign out</button>
+				  	<hr>
+				  	<div>
+				  		<a href="#">Privacy Policy</a>
+				  		<span></span>
+				  		<a href="#">Terms of Service</a>
+				  	</div>
+				  </div>
+
+				</div>
+			</div></a>
+			<div id="Box-top" alt="Apps">
+				<a href="#">
 					<img src="./googleicon.png" height="25px" width="25px">
 				</a>
 			</div>
-			<div id="Images">
+			<div id="Images" alt="Images">
 				<a href="#" >
 					Images
 				</a>
 			</div>
-			<div id="Gmail">
+			<div id="Gmail" alt="Gmail">
 				<a href="#" >
 					Gmail
 				</a>
